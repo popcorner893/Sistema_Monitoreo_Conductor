@@ -6,4 +6,4 @@ Modelo de inteligencia artificial orientado a la utilización de herramientas de
 
 # Dataset
 DMD - Driving Monitoring Dataset - Alrededor de 41 horas de grabaciones segmentadas en categorías, altamente variadas. 
-![url]https://dmd.vicomtech.org/#about
+https://dmd.vicomtech.org/#about
