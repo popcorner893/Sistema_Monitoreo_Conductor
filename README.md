@@ -18,9 +18,9 @@ Integrar herramientas de Computer Vision (modelos de extracción de posturas com
 
 La fatiga y la distracción al volante son factores críticos en accidentes de tráfico a nivel mundial: conductas como la somnolencia afectan la concentración del conductor y aumentan el riesgo de colisión. 
 
-En 2017, en los Estados Unidos se estimó que **91,000 accidentes** reportados por la policía involucraron a conductores somnolientos, resultando en aproximadamente 50,000 lesiones y casi 800 muertes. [1]
+En 2017, en los Estados Unidos se estimó que **91,000 accidentes** reportados por la policía involucraron a conductores somnolientos, resultando en aproximadamente 50,000 lesiones y casi 800 muertes. **[1]**
 
-En **Colombia**, particularmente, los microsueños están vinculados a un alto porcentaje de siniestros viales [2]. En 2022 se registraron 8.032 muertes por accidentes de tránsito en Colombia, una de las cifras más altas de los últimos tiempos en materia de tránsito, lo que representó un aumento del 13,1% respecto al año anterior. Entre las causas mencionadas se encuentran la alta velocidad, imprudencias, cansancio, **microsueños**, fatiga y falta de experiencia [3]
+En **Colombia**, particularmente, los microsueños están vinculados a un alto porcentaje de siniestros viales **[2]**. En 2022 se registraron 8.032 muertes por accidentes de tránsito en Colombia, una de las cifras más altas de los últimos tiempos en materia de tránsito, lo que representó un aumento del 13,1% respecto al año anterior. Entre las causas mencionadas se encuentran la alta velocidad, imprudencias, cansancio, **microsueños**, fatiga y falta de experiencia **[3]**
 
 Un sistema de monitoreo constante y en tiempo real permitiría al vehículo lanzar una señal de advertencia tras detectar indicios de somnolencia en el conductor, y, dado el caso, llevar a cabo medidas de seguridad; esto resulta especialmente importante en el marco de los nuevos automóviles inteligentes más recientes de la industria. este proyecto permite realizar una aproximación a la solución de esta problemática partiendo de un pipeline de procesamiento de datos y tareas de clasificación a través de algoritmos de ML.
 
@@ -43,7 +43,7 @@ Se divide al dataset internamente en 3 subsets: **Gaze (vista), Distraction (dis
 
 Para este proyecto, se ha escogido la división **Drowsiness** del dataset, utilizando los videos desde la **cámara facial** para identificar signos de fatiga.
 
-Con ayuda de Mediapipe [4] y ViTPose [5], es posible crear una estructura de Pandas en donde las filas corresponden a *frames* de videos, y, las columnas, a *coordenadas de landmarks* detectados por estas herramientas. Juntando las coordenadas de los ***468** landmarks faciales de Mediapipe (x,y,z), y **22** landmarks seleccionados de ViTPose (x,y), provenientes de las manos, además de 3 características a predecir: **blinks, eyes_state y yawning**, el subdataset de Drowsiness procesado cuenta con **92491 filas y 1453 columnas**, pertenecientes a 16 sujetos del DMD.
+Con ayuda de Mediapipe **[4]** y ViTPose **[5]**, es posible crear una estructura de Pandas en donde las filas corresponden a *frames* de videos, y, las columnas, a *coordenadas de landmarks* detectados por estas herramientas. Juntando las coordenadas de los ***468** landmarks faciales de Mediapipe (x,y,z), y **22** landmarks seleccionados de ViTPose (x,y), provenientes de las manos, además de 3 características a predecir: **blinks, eyes_state y yawning**, el subdataset de Drowsiness procesado cuenta con **92491 filas y 1453 columnas**, pertenecientes a 16 sujetos del DMD.
 
 [Dataset Filtrado y Procesado](https://drive.google.com/file/d/181jpRp34J8gU2srIuj6HrFwkrssZrgEt/view?usp=sharing)
 
@@ -88,8 +88,8 @@ Con ayuda de Mediapipe [4] y ViTPose [5], es posible crear una estructura de Pan
 # Enlaces
 
 - Código (Notebook final): [Link notebook final]()
-- Video de explicación:[Link video]()
-- Reposotorio: [Link repositorio]()
+- Video de explicación: [Link video]()
+- Reposotorio: [Link repositorio](https://github.com/popcorner893/Sistema_Monitoreo_Conductor)
 
 # Bibliografía
 
