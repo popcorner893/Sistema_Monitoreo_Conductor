@@ -8,7 +8,7 @@
 ## Autores
 
 - [Iván Augusto Camargo López - 2230033](https://github.com/popcorner893)
-- [Santiago Torres Barbosa]
+- [Santiago Torres Barbosa - 2202024]
 
 ## Objetivo
 
