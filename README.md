@@ -39,6 +39,8 @@ Se divide al dataset internamente en 3 subsets: **Gaze (vista), Distraction (dis
 
 [Dataset](https://dmd.vicomtech.org/#about)
 
+![Texto alternativo](https://cdn.prod.website-files.com/5e9ecbb00065a0340014367f/5ea05bbe13c94023a1f7c959_distracted_driver-transcode.mp4)
+
 ### Procesado - Dataset Propio 
 
 Para este proyecto, se ha escogido la división **Drowsiness** del dataset, utilizando los videos desde la **cámara facial** para identificar signos de fatiga.
