@@ -41,11 +41,55 @@ Se divide al dataset internamente en 3 subsets: **Gaze (vista), Distraction (dis
 
 ### Procesado - Dataset Propio 
 
-## Pipeline General
+Para este proyecto, se ha escogido la división **Drowsiness** del dataset, utilizando los videos desde la **cámara facial** para identificar signos de fatiga.
+
+Con ayuda de Mediapipe [4] y ViTPose [5], es posible crear una estructura de Pandas en donde las filas corresponden a *frames* de videos, y, las columnas, a *coordenadas de landmarks* detectados por estas herramientas. Juntando las coordenadas de los ***468** landmarks faciales de Mediapipe (x,y,z), y **22** landmarks seleccionados de ViTPose (x,y), provenientes de las manos, además de 3 características a predecir: **blinks, eyes_state y yawning**, el subdataset de Drowsiness procesado cuenta con **92491 filas y 1453 columnas**, pertenecientes a 16 sujetos del DMD.
+
+[Dataset Filtrado y Procesado](https://drive.google.com/file/d/181jpRp34J8gU2srIuj6HrFwkrssZrgEt/view?usp=sharing)
+
+## Modelos
+
+### Extracción de Posturas
+
+- Mediapipe FaceMesh
+- ViTPose
+
+### Machine Learning - Clasificación
+
+- Gaussian Naive Bayes
+- Decision Tree Classifier
+- Random Forest Classifier
+- Support Vector Machine
+- Logistic Regression
+- Kneighbors Classifier
+- Linear Discriminant Analysis
+- Deep Learning
+
+### Reducción de Dimensionalidad
+
+- PCA
+- t-SNE
+- Truncated SVD
+- Factor Analysis
+
+### Clustering
+
+- K-Means
+- DBSCAN
+- Birch
+- Gaussian Mixture
+
+# Pipeline General
 
 <div id="header" align="center">
   <img src="https://github.com/popcorner893/Sistema_Monitoreo_Conductor/blob/main/RecursosVisuales/Infografía%20Proyecto%20IA.png"
 </div>
+
+# Enlaces
+
+- Código (Notebook final): [Link notebook final]()
+- Video de explicación:[Link video]()
+- Reposotorio: [Link repositorio]()
 
 # Bibliografía
 
@@ -60,9 +104,3 @@ Se divide al dataset internamente en 3 subsets: **Gaze (vista), Distraction (dis
 - Lugaresi, C., Ma, S., Intwala, M., Manjunath, V., Lafleche, J. F., & Kossman, A. (2020). MediaPipe: A Framework for Perceiving and Processing Reality (arXiv:2006.10214). arXiv.
 
 - Xu, Y., Du, Y., Zhang, W., Wang, Z., Wei, F., Lin, S., & Hu, R. (2022). ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation (arXiv:2204.12484). arXiv. https://arxiv.org/abs/2204.12484
-
-# Dataset
-DMD - Driving Monitoring Dataset - Alrededor de 41 horas de grabaciones segmentadas en categorías, altamente variadas. 
-https://dmd.vicomtech.org/#about
-
-![alt text](https://www.kienyke.com/sites/default/files/2023-06/Microsuen%CC%83o.jpg)
