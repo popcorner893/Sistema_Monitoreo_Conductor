@@ -82,7 +82,7 @@ Con ayuda de Mediapipe [4] y ViTPose [5], es posible crear una estructura de Pan
 # Pipeline General
 
 <div id="header" align="center">
-  <img src="https://github.com/popcorner893/Sistema_Monitoreo_Conductor/blob/main/RecursosVisuales/Infografía%20Proyecto%20IA.png"
+  <img src="https://github.com/popcorner893/Sistema_Monitoreo_Conductor/blob/main/RecursosVisuales/Infografía%20Proyecto%20IA.png" />
 </div>
 
 # Enlaces
