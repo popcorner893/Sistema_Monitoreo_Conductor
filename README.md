@@ -39,7 +39,11 @@ Se divide al dataset internamente en 3 subsets: **Gaze (vista), Distraction (dis
 
 [Dataset](https://dmd.vicomtech.org/#about)
 
-![Alt text]([https://cdn.prod.website-files.com/5e9ecbb00065a0340014367f/5ea05bbe13c94023a1f7c959_distracted_driver-transcode.mp4](https://github.com/popcorner893/Sistema_Monitoreo_Conductor/blob/main/RecursosVisuales/DMD_gif.gif))
+<div align="center">
+  <img src="https://github.com/popcorner893/Sistema_Monitoreo_Conductor/blob/main/RecursosVisuales/DMD_gif.gif" />
+  <p>Ortega, J. D., Kose, N., Cañas, P., Chao, M.-A., Unnervik, A., Nieto, M., Otaegui, O., Salgado, L. (2020). DMD: A Large-Scale Multi-modal Driver Monitoring Dataset for Attention and Alertness Analysis [3].</p>
+</div>
+
 
 ### Procesado - Dataset Propio 
 
