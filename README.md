@@ -1,7 +1,7 @@
 # Sistema de Monitoreo: Acciones Peligrosas en el Conductor
 
 <div id="header" align="center">
-  <img src="https://github.com/popcorner893/Sistema_Monitoreo_Conductor/blob/main/Banner%20Inteligencia%20Artificial.png"
+  <img src="https://github.com/popcorner893/Sistema_Monitoreo_Conductor/blob/main/RecursosVisuales/Banner%20Inteligencia%20Artificial.png"
 </div>
 
 Sistema de Monitoreo de Acciones Distractivas en el Conductor
