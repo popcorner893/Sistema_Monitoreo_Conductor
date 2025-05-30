@@ -10,6 +10,22 @@
 - [Iván Augusto Camargo López - 2230033](https://github.com/popcorner893)
 - [Santiago Torres Barbosa - 2202024]
 
+## Índice
+
+- [Objetivo](#objetivo)
+- [Motivación y Descripción del Problema](#motivación-y-descripción-del-problema)
+- [Dataset](#dataset)
+  - [Driver Monitoring Dataset - DMD](#driver-monitoring-dataset---dmd)
+  - [Procesado - Dataset Propio](#procesado---dataset-propio)
+- [Modelos](#modelos)
+  - [Extracción de Posturas](#extracción-de-posturas)
+  - [Machine Learning - Clasificación](#machine-learning---clasificación)
+  - [Reducción de Dimensionalidad](#reducción-de-dimensionalidad)
+  - [Clustering](#clustering)
+- [Pipeline General](#pipeline-general)
+- [Enlaces](#enlaces)
+- [Bibliografía](#bibliografía)
+
 ## Objetivo
 
 Integrar herramientas de Computer Vision (modelos de extracción de posturas como Mediapipe FaceMesh) y métodos tradicionales de Machine Learning para la detección de acciones peligrosas realizadas al volante, como microsueños, a partir de la clasificación de cuadros individuales provenientes de videos del rostro del conductor. Esto con el fin de alertar al conductor y pasajeros de vehículo, y evitar accidentes viales potencialmente fatales. 
