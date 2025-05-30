@@ -115,14 +115,14 @@ Con ayuda de Mediapipe **[4]** y ViTPose **[5]**, es posible crear una estructur
 
 # Bibliografía
 
-- Administración Nacional de Seguridad del Tráfico en las Carreteras (NHTSA). (2024). Manejar soñoliento.
+1. Administración Nacional de Seguridad del Tráfico en las Carreteras (NHTSA). (2024). Manejar soñoliento.
 
-- Ártimo. (2024, 21 de febrero). Microsueños y siniestros en Colombia: Una realidad preocupante.
+2. Ártimo. (2024, 21 de febrero). Microsueños y siniestros en Colombia: Una realidad preocupante.
 
-- Boyacá Sie7e Días. (2023, 30 de junio). Fueron 8.032 los muertos en accidentes de tránsito el año pasado en Colombia. https://boyaca7dias.com.co/2023/06/30/fueron-8-032-los-muertos-en-accidentes-de-transito-el-ano-pasado-en-colombia
+3. Boyacá Sie7e Días. (2023, 30 de junio). Fueron 8.032 los muertos en accidentes de tránsito el año pasado en Colombia. https://boyaca7dias.com.co/2023/06/30/fueron-8-032-los-muertos-en-accidentes-de-transito-el-ano-pasado-en-colombia
 
-- Ortega, J., Kose, N., Cañas, P., Chao, M.a., Unnervik, A., Nieto, M., Otaegui, O., & Salgado, L. (2020). DMD: A Large-Scale Multi-Modal Driver Monitoring Dataset for Attention and Alertness Analysis. In: A. Bartoli & A. Fusiello (eds), Computer Vision -- ECCV 2020 Workshops (pg. 387–405). Springer International Publishing.
+4. Ortega, J., Kose, N., Cañas, P., Chao, M.a., Unnervik, A., Nieto, M., Otaegui, O., & Salgado, L. (2020). DMD: A Large-Scale Multi-Modal Driver Monitoring Dataset for Attention and Alertness Analysis. In: A. Bartoli & A. Fusiello (eds), Computer Vision -- ECCV 2020 Workshops (pg. 387–405). Springer International Publishing.
 
-- Lugaresi, C., Ma, S., Intwala, M., Manjunath, V., Lafleche, J. F., & Kossman, A. (2020). MediaPipe: A Framework for Perceiving and Processing Reality (arXiv:2006.10214). arXiv.
+5. Lugaresi, C., Ma, S., Intwala, M., Manjunath, V., Lafleche, J. F., & Kossman, A. (2020). MediaPipe: A Framework for Perceiving and Processing Reality (arXiv:2006.10214). arXiv.
 
-- Xu, Y., Du, Y., Zhang, W., Wang, Z., Wei, F., Lin, S., & Hu, R. (2022). ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation (arXiv:2204.12484). arXiv. https://arxiv.org/abs/2204.12484
+6. Xu, Y., Du, Y., Zhang, W., Wang, Z., Wei, F., Lin, S., & Hu, R. (2022). ViTPose: Simple Vision Transformer Baselines for Human Pose Estimation (arXiv:2204.12484). arXiv. https://arxiv.org/abs/2204.12484
