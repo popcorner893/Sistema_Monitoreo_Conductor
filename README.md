@@ -65,7 +65,7 @@ Se divide al dataset internamente en 3 subsets: **Gaze (vista), Distraction (dis
 
 Para este proyecto, se ha escogido la división **Drowsiness** del dataset, utilizando los videos desde la **cámara facial** para identificar signos de fatiga.
 
-Con ayuda de Mediapipe **[4]** y ViTPose **[5]**, es posible crear una estructura de Pandas en donde las filas corresponden a *frames* de videos, y, las columnas, a *coordenadas de landmarks* detectados por estas herramientas. Juntando las coordenadas de los ***468** landmarks faciales de Mediapipe (x,y,z), y **22** landmarks seleccionados de ViTPose (x,y), provenientes de las manos, además de 3 características a predecir: **blinks, eyes_state y yawning**, el subdataset de Drowsiness procesado cuenta con **92491 filas y 1453 columnas**, pertenecientes a 16 sujetos del DMD.
+Con ayuda de Mediapipe **[4]** y ViTPose **[5]**, es posible crear una estructura de Pandas en donde las filas corresponden a *frames* de videos, y, las columnas, a *coordenadas de landmarks* detectados por estas herramientas. Juntando las coordenadas de los **468** landmarks faciales de Mediapipe (x,y,z), y **22** landmarks seleccionados de ViTPose (x,y), provenientes de las manos, además de 3 características a predecir: **blinks, eyes_state y yawning**, el subdataset de Drowsiness procesado cuenta con **92491 filas y 1453 columnas**, pertenecientes a 16 sujetos del DMD.
 
 [Dataset Filtrado y Procesado](https://drive.google.com/file/d/181jpRp34J8gU2srIuj6HrFwkrssZrgEt/view?usp=sharing)
 
