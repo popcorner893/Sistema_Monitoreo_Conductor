@@ -124,6 +124,7 @@ De manera local, se realizó el procesamiento de uno de los videos del DMD a par
 
 - El sistema tiene un rendimiento aceptable cuando se evalúan las grabaciones procedentes del DMD, pero se está ligado a la posición relativa de la cámara con respecto al conductor; al grabar desde otro ángulo, las predicciones disminuyen su exactitud.
 - Para solucionar esto, se podría considerar aplicar otras transformaciones y preprocesado del dataset, antes de pasar al aprendizaje. En el proyecto, se sugiere que transformar las coordenadas a otros espacios podría ser un buen punto de inicio.
+- Se intentó realizar una detección en tiempo real de las posturas para su procesamiento inmediato. No obstante, se comprobó que esta implementación no es posible desde la aproximación del proyecto: mientras la detección de Mediapipe es prácticamente instantánea, las inferencias de poses de ViTPose son muy lentas y dan lugar a latencias muy elevadas. 
 - Se probó principalmente con la división Drowsiness del dataset DMD, dada la amplitud del dataset. Resultaría muy útil inspeccionar más a detalle las divisiones de Distriction y Gaze, para complementar la identificación de acciones peligrosas al volante.
 
 # Conclusiones
