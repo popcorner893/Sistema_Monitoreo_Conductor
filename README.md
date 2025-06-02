@@ -1,4 +1,4 @@
-# Sistema de Monitoreo: Acciones Peligrosas en el Conductor - Microsueño
+# Sistema de Monitoreo: Acciones Peligrosas en el Conductor - Enfoque en Microsueño
 
 <div id="header" align="center">
   <img src="https://github.com/popcorner893/Sistema_Monitoreo_Conductor/blob/main/RecursosVisuales/Banner%20Inteligencia%20Artificial.png" />
