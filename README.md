@@ -57,7 +57,7 @@ Se divide al dataset internamente en 3 subsets: **Gaze (vista), Distraction (dis
 
 <div align="center">
   <img src="https://github.com/popcorner893/Sistema_Monitoreo_Conductor/blob/main/RecursosVisuales/DMD_gif.gif" />
-  <p>Ortega, J. D., Kose, N., Cañas, P., Chao, M.-A., Unnervik, A., Nieto, M., Otaegui, O., Salgado, L. (2020). DMD: A Large-Scale Multi-modal Driver Monitoring Dataset for Attention and Alertness Analysis [3].</p>
+  <p>Ortega, J. D., Kose, N., Cañas, P., Chao, M.-A., Unnervik, A., Nieto, M., Otaegui, O., Salgado, L. (2020). DMD: A Large-Scale Multi-modal Driver Monitoring Dataset for Attention and Alertness Analysis [4].</p>
 </div>
 
 
@@ -67,7 +67,7 @@ Para este proyecto, se ha escogido la división **Drowsiness** del dataset, util
 
 Con ayuda de Mediapipe **[4]** y ViTPose **[5]**, es posible crear una estructura de Pandas en donde las filas corresponden a *frames* de videos, y, las columnas, a *coordenadas de landmarks* detectados por estas herramientas. Juntando las coordenadas de los **468** landmarks faciales de Mediapipe (x,y,z), y **22** landmarks seleccionados de ViTPose (x,y), provenientes de las manos, además de 3 características a predecir: **blinks, eyes_state y yawning**, el subdataset de Drowsiness procesado cuenta con **92491 filas y 1453 columnas**, pertenecientes a 16 sujetos del DMD.
 
-[Dataset Filtrado y Procesado](https://drive.google.com/file/d/181jpRp34J8gU2srIuj6HrFwkrssZrgEt/view?usp=sharing)
+[Dataset Filtrado y Procesado](https://drive.google.com/file/d/19VynUTAJnvmAVz4Paar2gVssRljPX7Ni/view?usp=sharing)
 
 ## Modelos
 
@@ -107,9 +107,31 @@ Con ayuda de Mediapipe **[4]** y ViTPose **[5]**, es posible crear una estructur
   <img src="https://github.com/popcorner893/Sistema_Monitoreo_Conductor/blob/main/RecursosVisuales/Infografía%20Proyecto%20IA.png" />
 </div>
 
+# Resultados - Visualización
+
+De manera local, se realizó el procesamiento de uno de los videos del DMD a partir de las predicciones de cada cuadro por separado (Véase Util_scripts). En este caso, se realizó una aplicación en la que se ponderan arbitrariamente las predicciones de las clases 'yawning', 'eyes_state' y 'blinks', y, a partir de sus ocurrencias en una ventana anterior de N frames, salta una alarma para simular la identificación de una conducta peligrosa en el conductor. 
+
+<div align="center">
+  <img src="https://github.com/popcorner893/Sistema_Monitoreo_Conductor/blob/main/RecursosVisuales/Demo_GIF.gif" />
+  <p>Demo del Sistema. Utilización de video proveniente del DMD [4].</p>
+</div>
+
+# Limitaciones y Trabajo Futuro
+
+- El sistema tiene un rendimiento aceptable cuando se evalúan las grabaciones procedentes del DMD, pero se está ligado a la posición relativa de la cámara con respecto al conductor; al grabar desde otro ángulo, las predicciones disminuyen su exactitud.
+- Para solucionar esto, se podría considerar aplicar otras transformaciones y preprocesado del dataset, antes de pasar al aprendizaje. En el proyecto, se sugiere que transformar las coordenadas a otros espacios podría ser un buen punto de inicio.
+- Se probó principalmente con la división Drowsiness del dataset DMD, dada la amplitud del dataset. Resultaría muy útil inspeccionar más a detalle las divisiones de Distriction y Gaze, para complementar la identificación de acciones peligrosas al volante.
+
+# Conclusiones
+
+- Las herramientas de extracción de posturas a través de videos (en este caso, Mediapipe FaceMesh y ViTPose), probaron ser un buen punto de partida para optar por un enfoque tabular en el análisis de videos que involucren ciertos comportamientos humanos (en este caso, aquellos relacionados al volante).
+- Distintos modelos de ML tradicionales probaron ser efectivos a la hora de llevar a cabo la tarea de clasificación; destacando, entre ellos, la labor del RandomForestClassifier y el Kneighbors Classifier. Se puede atribuir el mejor rendimiento de estos últimos a la naturaleza de coordenadas de los datos y cómo estas se agrupan entre sí.
+- Destaca la labor del aprendizaje no supervisado a través de los métodos de reducción de dimensionalidad. Específicamente, el PCA (Análisis de Componentes Principales) permitió mejorar el rendimiento y las métricas a través de la eliminación del ruido y el enfoque los componentes con mayor varianza.
+- En cambio, los métodos de clustering implementados no fueron efectivos en la diferenciación de las clases. Un análisis visual a través de PCA o t-SNE permite observar que la separación de las etiquetas no es una labor trivial para nuestro caso de estudio. 
+
 # Enlaces
 
-- Código (Notebook final): [Link notebook final]()
+- Código (Notebook final): [Link notebook final](https://drive.google.com/file/d/1gxYBAXHl9cVZc4irqw7EU25lF7-FZOff/view?usp=sharing)
 - Video de explicación: [Link video]()
 - Reposotorio: [Link repositorio](https://github.com/popcorner893/Sistema_Monitoreo_Conductor)
 
