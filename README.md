@@ -23,8 +23,12 @@
   - [Reducción de Dimensionalidad](#reducción-de-dimensionalidad)
   - [Clustering](#clustering)
 - [Pipeline General](#pipeline-general)
+- [Resultados - Visualización](#resultados---visualización)
+- [Conclusiones](#conclusiones)
+- [Limitaciones y Trabajo Futuro](#limitaciones-y-trabajo-futuro)
 - [Enlaces](#enlaces)
 - [Bibliografía](#bibliografía)
+
 
 ## Objetivo
 
