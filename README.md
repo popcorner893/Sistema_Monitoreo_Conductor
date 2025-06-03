@@ -137,7 +137,7 @@ De manera local, se realizó el procesamiento de uno de los videos del DMD a par
 # Enlaces
 
 - Código (Notebook final): [Link notebook final](https://drive.google.com/file/d/1gxYBAXHl9cVZc4irqw7EU25lF7-FZOff/view?usp=sharing)
-- Video de explicación: [Link video]()
+- Video de explicación: [Link video](https://youtu.be/7ePO4vQcOR8)
 - Reposotorio: [Link repositorio](https://github.com/popcorner893/Sistema_Monitoreo_Conductor)
 
 # Bibliografía
